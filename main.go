@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	fmt.Println("Hello, World!")
-	var age int = 5
+	var age int = 21
 	var name string = "Kiranmayee"
 	var height float32 = 5.03
 	fmt.Printf("My name is %s and my age is %d\n", name, age)
@@ -19,4 +19,16 @@ func main() {
 	} else {
 		fmt.Println("Yoy have scored less than a century")
 	}
+	//i is only available in for loop
+
+	for i := 0; i < 5; i++ {
+		fmt.Println(i)
+	}
+
+	i := 0
+	for i < 15 {
+		fmt.Println(i)
+		i++
+	}
+
 }
