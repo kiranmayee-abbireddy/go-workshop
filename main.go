@@ -31,4 +31,13 @@ func main() {
 		i++
 	}
 
+	j := 20
+	for {
+		if j > 25 {
+			break
+		}
+		fmt.Println("Infinite loop")
+		j++
+	}
+
 }
