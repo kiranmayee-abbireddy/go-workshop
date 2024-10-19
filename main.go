@@ -56,9 +56,19 @@ func main() {
 	fmt.Println("The value of xp is", xp)
 	xp = &y
 	fmt.Println("The value of xp is", xp)
+
+	//pass by reference
+	fmt.Println("The current value of x is", x)
+	fmt.Println("The value of x is", addByReference(&x, y))
+	fmt.Println("The value of x after add by reference is", x)
 }
 
 func add(x int64, y int64) int64 {
 	x = x + 10
 	return x + y
+}
+
+func addByReference(x *int64, y int64) int64 {
+	*x = *x + 10
+	return *x + y
 }
