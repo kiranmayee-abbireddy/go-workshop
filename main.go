@@ -71,6 +71,13 @@ func main() {
 
 	p := Person{name: "Kiranmyee", age: 21, height: 5.03, place: "Hyderabad"}
 	fmt.Println(p.name, p.age, p.height, p.place)
+
+	q := new(Person)
+	q.name = "Mayee"
+	q.age = 21
+	q.height = 5.05
+	q.place = "Coimbatore"
+	fmt.Println(q)
 }
 
 func add(x int64, y int64) int64 {
